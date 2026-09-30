@@ -1,0 +1,748 @@
+button:hover {
+  cursor: pointer;
+}
+
+body {
+  min-height: 100svh;
+  font-family: "Inter", sans-serif;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero-background {
+  position: absolute;
+  height: 40.575625rem;
+  width: 100%;
+  background: linear-gradient(90deg, #ffffff 0%, #d6e6fe 100%);
+  z-index: -1;
+  border-radius: 0 0 35px 35px;
+}
+
+.hero-container {
+  width: 20.5rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 1.5rem 0;
+  box-sizing: content-box;
+}
+
+.hero-logo {
+  width: 2.5rem;
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero-title {
+  color: hsl(215, 31%, 21%);
+  font-size: 3rem;
+  line-height: 1.1;
+  letter-spacing: -0.05em;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: normal;
+}
+
+.hero-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: normal;
+  font-weight: 400;
+  color: hsl(215, 17%, 45%);
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+.form {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 16px 32px 56px 0px rgba(139, 174, 207, 0.25);
+  background-color: hsl(0, 100%, 100%);
+  border-radius: 16px;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.form-header {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  font-weight: 600;
+  color: hsl(215, 31%, 21%);
+  margin-bottom: 1.5rem;
+}
+
+.system-option {
+  display: flex;
+  gap: 1rem;
+  color: hsl(215, 31%, 21%);
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0%;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.system-option-radio {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 1.9375rem;
+  height: 1.9375rem;
+  border: 1px solid hsl(215, 17%, 45%);
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.system-option-radio:focus-visible,
+.system-option-radio:hover {
+  cursor: pointer;
+  border-color: hsl(227, 92%, 58%);
+}
+
+.system-option-radio:checked {
+  background-color: hsl(228, 94%, 94%);
+  border: 1px solid hsl(228, 94%, 94%);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.system-option-radio:checked::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: hsl(227, 92%, 58%);
+  border-radius: 50%;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.height-input,
+.weight-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 1rem;
+  max-width: 17.5rem;
+}
+
+.input-label {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: normal;
+  font-weight: 400;
+  color: hsl(215, 17%, 45%);
+}
+
+.input-wrapper {
+  padding: 1.5rem;
+  border: 1px solid hsl(215, 17%, 45%);
+  border-radius: 12px;
+  display: flex;
+  gap: 1.5rem;
+  max-width: 17.5rem;
+  min-width: 8.25rem;
+  box-sizing: border-box;
+}
+
+.input-wrapper:focus-within,
+.input-wrapper:hover {
+  cursor: pointer;
+  border-color: hsl(227, 92%, 58%);
+}
+
+.input {
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  font-weight: 600;
+  color: hsl(215, 31%, 21%);
+  max-width: 10.8125rem;
+  max-height: 1.8125rem;
+  min-width: 1.6875rem;
+  line-height: 1;
+}
+
+/* Chrome, Safari, Edge */
+.input::-webkit-inner-spin-button,
+.input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.input {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
+}
+
+.unit {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  font-weight: 600;
+  color: hsl(227, 92%, 58%);
+  line-height: 1;
+}
+
+.bmi-result {
+  background-color: hsl(227, 92%, 58%);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: hsl(0, 100%, 100%);
+}
+
+.bmi-result > * {
+  flex: 1;
+}
+
+.bmi-value {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bmi-label {
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0%;
+  font-weight: 600;
+}
+
+.bmi-label-starter {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  font-weight: 600;
+}
+
+.bmi-number {
+  font-size: 3rem;
+  line-height: 1.1;
+  letter-spacing: -0.05em;
+  font-weight: 600;
+}
+
+.bmi-description {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: normal;
+  font-weight: 400;
+}
+
+.results {
+  margin: 0 auto;
+  max-width: 23.4375rem;
+}
+
+.results-text-container {
+  padding: 3rem 1.46875rem 3.850625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.results-title {
+  font-size: 2rem;
+  line-height: 1.1;
+  letter-spacing: -0.05em;
+  font-weight: 600;
+  color: hsl(215, 31%, 21%);
+}
+
+.results-description {
+  color: hsl(215, 17%, 45%);
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: normal;
+  font-weight: 400;
+}
+
+.tips {
+  margin: 0 auto;
+  max-width: 23.4375rem;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.25) 0%, rgba(214, 252, 254, 0.25) 100%);
+}
+
+.tip-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tip-logo {
+  width: 4rem;
+}
+
+.tip-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tip-title {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  font-weight: 600;
+  color: hsl(215, 31%, 21%);
+}
+
+.tip-description {
+  color: hsl(215, 17%, 45%);
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: normal;
+  font-weight: 400;
+}
+
+.limitations-positioning-container {
+  padding: 0 29px 0 19px;
+}
+
+.limitations {
+  max-width: 20.4375rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.limitations-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.limitations-title {
+  font-size: 2rem;
+  line-height: 1.1;
+  letter-spacing: -0.05em;
+  font-weight: 600;
+  color: hsl(215, 31%, 21%);
+}
+
+.limitations-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: normal;
+  font-weight: 400;
+  color: hsl(215, 17%, 45%);
+  text-align: center;
+  letter-spacing: 0.005em;
+}
+
+.limitations-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.limitations-section {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 16px;
+  background-color: hsl(0, 100%, 100%);
+  box-shadow: 16px 32px 56px 0px rgba(139, 174, 207, 0.25);
+}
+
+.section-title-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.section-title {
+  color: hsl(215, 31%, 21%);
+  font-size: 1.25rem;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  font-weight: 600;
+}
+
+.section-description {
+  color: hsl(215, 17%, 45%);
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: normal;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 37.5rem) {
+  .hero-background {
+    height: 40rem;
+  }
+  .hero-container {
+    width: auto;
+    max-width: 42.875rem;
+    padding: 2rem 2.5rem 0 2.5rem;
+    gap: 2.5rem;
+  }
+  .hero-title {
+    padding: 0 10rem;
+  }
+  .form {
+    padding: 2rem;
+    gap: 2rem;
+    width: 100%;
+    max-width: 42.875rem;
+  }
+  .height-input,
+  .weight-input {
+    min-width: 0;
+  }
+  .form-header {
+    margin-bottom: 2rem;
+  }
+  fieldset {
+    justify-content: space-between;
+  }
+  .system-option {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .form-section {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  .height-input,
+  .weight-input,
+  .input-wrapper {
+    width: 100%;
+    max-width: none;
+  }
+  .bmi-result {
+    border-radius: 90px 999px 999px 90px;
+    gap: 1rem;
+  }
+  .results {
+    display: flex;
+    gap: 4.5rem;
+    align-items: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    transform: translateX(-74px);
+    max-width: none;
+    margin: 5.5rem 2.6875rem 5.994375rem 0;
+  }
+  .img-eating-man-container {
+    width: 22.5rem;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .img-eating-man {
+    width: 24rem;
+    max-width: none;
+  }
+  .results-text-container {
+    width: 20.6875rem;
+    padding: 2.159375rem 0.1875rem 2.159375rem 0;
+  }
+  .tips {
+    padding: 3.75rem 2.5625rem;
+    max-width: none;
+  }
+  .tip-container {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+  .tip-description {
+    letter-spacing: 0.005em;
+  }
+  .limitations-positioning-container {
+    margin-top: 6.005625rem;
+    padding: 0 2.6875rem 5.994375rem 2.4375rem;
+  }
+  .limitations {
+    max-width: none;
+  }
+  .limitations-content-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.5rem 1rem;
+  }
+  .limitations-section {
+    padding: 2rem;
+  }
+  .race {
+    grid-column: 1/-1;
+    max-width: 22.8125rem;
+    justify-self: center;
+  }
+  .section-description {
+    letter-spacing: normal;
+  }
+  #imperial-form {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #imperial-form .input-group {
+    max-width: none;
+    gap: 1.5rem;
+  }
+  #imperial-form .input-wrapper {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 59.375rem) {
+  .hero {
+    max-width: 90rem;
+    margin-inline: auto;
+  }
+  .hero-background {
+    height: 46.0625rem;
+    max-width: 62.625rem;
+  }
+  .hero-container {
+    max-width: none;
+    margin-bottom: 2.0625rem;
+    padding: 5.5rem clamp(0rem, (100vw - 950px) * 0.294, 9rem);
+    display: grid;
+    gap: 1.5rem 2rem;
+    grid-template-areas: "logo logo" "text form";
+  }
+  .hero-logo {
+    grid-area: logo;
+    width: 4rem;
+  }
+  .hero-text-container {
+    grid-area: text;
+    align-self: start;
+    padding: 4.5rem 0;
+    gap: 2rem;
+    width: clamp(29.375rem, 29.375rem + (100vw - 950px) * 0.192, 35.25rem);
+  }
+  .hero-title {
+    text-align: start;
+    padding: 0 1rem 0 0;
+    font-size: 4rem;
+    line-height: 1.1;
+    letter-spacing: -0.05em;
+    font-weight: 600;
+  }
+  .hero-description {
+    text-align: start;
+    letter-spacing: normal;
+  }
+  .form {
+    grid-area: form;
+    max-width: 27rem;
+  }
+  fieldset {
+    gap: 2rem;
+  }
+  .input-wrapper {
+    height: 3.8125rem;
+    padding: 1rem 1.5rem;
+  }
+  .bmi-number {
+    font-size: 4rem;
+    line-height: 1.1;
+    letter-spacing: -0.05em;
+    font-weight: 600;
+    width: 12.875rem;
+  }
+  #imperial-form {
+    gap: 1.5rem;
+  }
+  #imperial-form .input-wrapper {
+    padding: 1.5rem;
+    height: 4.8125rem;
+  }
+  .results {
+    transform: none;
+    margin: 0 auto;
+    gap: clamp(2rem, 2rem + (100vw - 950px) * 0.202, 8.1875rem);
+    align-items: flex-start;
+  }
+  .img-eating-man-container {
+    max-width: 35.25rem;
+    width: 100%;
+    margin-top: 3.25rem;
+    flex-shrink: 1;
+  }
+  .img-eating-man {
+    max-width: 35.25rem;
+    width: 100%;
+  }
+  .vector-24-container {
+    align-self: flex-end;
+    margin-bottom: 0.25rem;
+  }
+  .results-text-container {
+    min-width: 18.75rem;
+    max-width: 29.0625rem;
+    width: 100%;
+    padding-bottom: 0;
+    padding-top: 0;
+    flex-shrink: 1;
+  }
+  .results-title {
+    font-size: 3rem;
+    line-height: 1.1;
+    letter-spacing: -0.05em;
+    font-weight: 600;
+  }
+  .tips {
+    flex-direction: row;
+    padding: 5.375rem 5.625rem 7.375rem 5.375rem;
+    gap: 2rem;
+    border-radius: 35px;
+    margin: 0.625rem 2.375rem 0.625rem 0.625rem;
+  }
+  .tip-container {
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 22.8125rem;
+  }
+  .limitations-positioning-container {
+    margin: 0;
+    padding: 6.5rem clamp(2rem, 2rem + (100vw - 950px) * 0.229, 9rem);
+    max-width: 90rem;
+    margin-inline: auto;
+  }
+  .limitations {
+    position: relative;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .limitations .vector-24-container {
+    position: absolute;
+    top: 251px;
+    left: clamp(0px, (100vw - 950px) * 0.337, 165px);
+    margin: 0;
+  }
+  .limitations-container {
+    align-items: flex-start;
+    max-width: clamp(31.25rem, 31.25rem + (100vw - 950px) * 0.131, 35.25rem);
+  }
+  .limitations-title {
+    font-size: 3rem;
+    line-height: 1.1;
+    letter-spacing: -0.05em;
+    font-weight: 600;
+  }
+  .limitations-description {
+    text-align: start;
+  }
+  .limitations-content-container {
+    position: absolute;
+    width: 60.0625rem;
+    right: 0;
+    margin-left: 12.4375rem;
+    display: grid;
+    grid-template-areas: ". gender" "age muscle" "pregnancy race";
+    grid-template-rows: auto;
+    grid-template-columns: 22.8125rem 22.8125rem;
+    gap: 1.5rem 2rem;
+    justify-content: end;
+  }
+  .limitations-section {
+    width: 22.8125rem;
+  }
+  .gender {
+    grid-area: gender;
+    grid-column-start: 2;
+    transform: translateX(clamp(-99px, (950px - 100vw) * 0.202, 0px));
+    margin-bottom: 0.5rem;
+  }
+  .age {
+    grid-area: age;
+  }
+  .muscle {
+    grid-area: muscle;
+  }
+  .pregnancy {
+    grid-area: pregnancy;
+    transform: translateX(clamp(-199px, (950px - 100vw) * 0.406, 0px));
+  }
+  .race {
+    grid-area: race;
+    grid-column: auto;
+    transform: translateX(clamp(-199px, (950px - 100vw) * 0.406, 0px));
+  }
+  .bmi-value {
+    max-width: 8.75rem;
+  }
+}
+@media screen and (min-width: 68.75rem) {
+  .bmi-value {
+    max-width: none;
+  }
+  .form {
+    max-width: 35.25rem;
+  }
+  .hero-description {
+    margin-right: 6.1875rem;
+  }
+  .hero-title {
+    padding: 0 clamp(1rem, 1rem + (100vw - 1100px) * 0.329, 8rem) 0 0;
+  }
+}
+.bmi-different {
+  flex-direction: row;
+  gap: 1.5rem;
+}/*# sourceMappingURL=styles.css.map */
