@@ -256,7 +256,7 @@ fieldset {
   @include text-preset-6-rg;
 }
 .limitations-positioning-container {
-  padding: 0 29px 0 19px;
+  padding: 0 rem(29) 0 rem(19);
 }
 .limitations {
   max-width: rem(327);
@@ -435,7 +435,7 @@ fieldset {
   .hero-container {
     max-width: none;
     margin-bottom: rem(33);
-    padding: rem(88) clamp(0rem, calc((100vw - 950px) * 0.294), 9rem);
+    padding: rem(88) clamp(0rem, calc((100vw - rem(950)) * 0.294), 9rem);
     display: grid;
     gap: 1.5rem 2rem;
     grid-template-areas:
@@ -555,7 +555,7 @@ fieldset {
     align-items: flex-start;
     max-width: clamp(
       rem(500),
-      calc(rem(500) + (100vw - 950px) * 0.131),
+      calc(rem(500) + (100vw - rem(950)) * 0.131),
       rem(564)
     );
   }
