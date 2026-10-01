@@ -199,6 +199,10 @@ fieldset {
   max-height: 1.8125rem;
   min-width: 1.6875rem;
   line-height: 1;
+  /* Firefox */
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 /* Chrome, Safari, Edge */
@@ -207,13 +211,6 @@ fieldset {
   -webkit-appearance: none;
           appearance: none;
   margin: 0;
-}
-
-/* Firefox */
-.input {
-  -moz-appearance: textfield;
-  -webkit-appearance: textfield;
-          appearance: textfield;
 }
 
 .unit {
@@ -534,15 +531,15 @@ fieldset {
   .section-description {
     letter-spacing: normal;
   }
-  #imperial-form {
+  .imperial-form {
     flex-direction: column;
     gap: 2rem;
   }
-  #imperial-form .input-group {
+  .imperial-form .input-group {
     max-width: none;
     gap: 1.5rem;
   }
-  #imperial-form .input-wrapper {
+  .imperial-form .input-wrapper {
     justify-content: space-between;
   }
 }
@@ -604,10 +601,10 @@ fieldset {
     font-weight: 600;
     width: 12.875rem;
   }
-  #imperial-form {
+  .imperial-form {
     gap: 1.5rem;
   }
-  #imperial-form .input-wrapper {
+  .imperial-form .input-wrapper {
     padding: 1.5rem;
     height: 4.8125rem;
   }

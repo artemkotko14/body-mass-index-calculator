@@ -154,6 +154,10 @@ fieldset {
   max-height: rem(29);
   min-width: rem(27);
   line-height: 1;
+  //hide arrows but keep type number
+  /* Firefox */
+  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 //hide arrows but keep type number
@@ -162,12 +166,6 @@ fieldset {
 .input::-webkit-outer-spin-button {
   appearance: none;
   margin: 0;
-}
-
-/* Firefox */
-.input {
-  -moz-appearance: textfield;
-  appearance: textfield;
 }
 
 .unit {
@@ -413,7 +411,7 @@ fieldset {
   .section-description {
     letter-spacing: normal;
   }
-  #imperial-form {
+  .imperial-form {
     flex-direction: column;
     gap: 2rem;
     & .input-group {
@@ -480,7 +478,7 @@ fieldset {
     @include text-preset-1;
     width: rem(206);
   }
-  #imperial-form {
+  .imperial-form {
     gap: 1.5rem;
     & .input-wrapper {
       padding: 1.5rem;
