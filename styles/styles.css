@@ -190,7 +190,7 @@ fieldset {
   background: none;
   outline: none;
   font-size: 1.5rem;
-  line-height: 1.2;
+
   letter-spacing: -0.05em;
   font-weight: 600;
   color: hsl(215, 31%, 21%);
@@ -214,7 +214,7 @@ fieldset {
 
 .unit {
   font-size: 1.5rem;
-  line-height: 1.2;
+
   letter-spacing: -0.05em;
   font-weight: 600;
   color: hsl(227, 92%, 58%);
