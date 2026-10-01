@@ -27,8 +27,8 @@ function calcBMIMetric() {
   if (heightInputCm.value === "" || weightInputKg.value === "") {
     return "Pending";
   }
-  let h = Number(heightInputCm.value) / 100;
-  let w = Number(weightInputKg.value);
+  const h = Number(heightInputCm.value) / 100;
+  const w = Number(weightInputKg.value);
 
   if (h <= 0 || w <= 0) {
     return "Invalid value";
@@ -69,8 +69,8 @@ function calcBMIImperial() {
     return "Invalid value";
   }
 
-  let h = Number(heightInputFt.value) * 12 + Number(heightInputIn.value);
-  let w = Number(weightInputSt.value) * 14 + Number(weightInputLbs.value);
+  const h = Number(heightInputFt.value) * 12 + Number(heightInputIn.value);
+  const w = Number(weightInputSt.value) * 14 + Number(weightInputLbs.value);
 
   if (h > 98.4 || w > 882) {
     return "Out of range";
@@ -119,8 +119,8 @@ function updateBMI() {
     let bmi = calcBMIMetric();
     updateBMIResult(bmi);
 
-    let minW = calcMinWeight()[0];
-    let maxW = calcMaxWeight()[0];
+    const minW = calcMinWeight()[0];
+    const maxW = calcMaxWeight()[0];
 
     minWeight.innerText = `${minW}kgs`;
     maxWeight.innerText = `${maxW}kgs`;
@@ -148,11 +148,11 @@ function calcMinWeight() {
   let w;
   let wRemains;
   if (metric.checked) {
-    let h = Number(heightInputCm.value) / 100;
+    const h = Number(heightInputCm.value) / 100;
     w = (18.5 * h ** 2).toFixed(1);
   } else {
-    let h = Number(heightInputFt.value) * 12 + Number(heightInputIn.value);
-    let wLbs = (18.5 * h ** 2) / 703;
+    const h = Number(heightInputFt.value) * 12 + Number(heightInputIn.value);
+    const wLbs = (18.5 * h ** 2) / 703;
     w = Math.floor(wLbs / 14);
     wRemains = Math.floor(wLbs - w * 14);
   }
@@ -162,11 +162,11 @@ function calcMaxWeight() {
   let w;
   let wRemains;
   if (metric.checked) {
-    let h = Number(heightInputCm.value) / 100;
+    const h = Number(heightInputCm.value) / 100;
     w = (24.9 * h ** 2).toFixed(1);
   } else {
-    let h = Number(heightInputFt.value) * 12 + Number(heightInputIn.value);
-    let wLbs = (24.9 * h ** 2) / 703;
+    const h = Number(heightInputFt.value) * 12 + Number(heightInputIn.value);
+    const wLbs = (24.9 * h ** 2) / 703;
     w = Math.floor(wLbs / 14);
     wRemains = Math.floor(wLbs - w * 14);
   }
