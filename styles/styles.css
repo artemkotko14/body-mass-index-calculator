@@ -48,7 +48,7 @@ body {
   color: hsl(215, 31%, 21%);
   font-size: 3rem;
   line-height: 1.1;
-  /* letter-spacing: -0.05em; */
+  letter-spacing: -0.05em;
   font-weight: 600;
   text-align: center;
   letter-spacing: normal;
@@ -57,7 +57,7 @@ body {
 .hero-description {
   font-size: 1rem;
   line-height: 1.5;
-  /* letter-spacing: normal; */
+  letter-spacing: normal;
   font-weight: 400;
   color: hsl(215, 17%, 45%);
   text-align: center;
@@ -107,8 +107,8 @@ fieldset {
 
 .system-option-radio {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 1.9375rem;
   height: 1.9375rem;
   border: 1px solid hsl(215, 17%, 45%);
@@ -202,14 +202,14 @@ fieldset {
   /* Firefox */
   -moz-appearance: textfield;
   -webkit-appearance: textfield;
-  appearance: textfield;
+          appearance: textfield;
 }
 
 /* Chrome, Safari, Edge */
 .input::-webkit-inner-spin-button,
 .input::-webkit-outer-spin-button {
   -webkit-appearance: none;
-  appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -307,11 +307,7 @@ fieldset {
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.25) 0%,
-    rgba(214, 252, 254, 0.25) 100%
-  );
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.25) 0%, rgba(214, 252, 254, 0.25) 100%);
 }
 
 .tip-container {
@@ -379,7 +375,7 @@ fieldset {
 .limitations-description {
   font-size: 1rem;
   line-height: 1.5;
-  /* letter-spacing: normal; */
+  letter-spacing: normal;
   font-weight: 400;
   color: hsl(215, 17%, 45%);
   text-align: center;
@@ -421,7 +417,7 @@ fieldset {
   color: hsl(215, 17%, 45%);
   font-size: 1rem;
   line-height: 1.5;
-  /* letter-spacing: normal; */
+  letter-spacing: normal;
   font-weight: 400;
   letter-spacing: 0.005em;
 }
@@ -615,7 +611,7 @@ fieldset {
   .results {
     transform: none;
     margin: 0 auto;
-    gap: clamp(2rem, 2rem + (100vw - 950px) * 0.202, 8.1875rem);
+    gap: clamp(2rem, 2rem + (100vw - 59.375rem) * 0.202, 8.1875rem);
     align-items: flex-start;
   }
   .img-eating-man-container {
@@ -660,7 +656,7 @@ fieldset {
   }
   .limitations-positioning-container {
     margin: 0;
-    padding: 6.5rem clamp(2rem, 2rem + (100vw - 950px) * 0.229, 9rem);
+    padding: 6.5rem clamp(2rem, 2rem + (100vw - 59.375rem) * 0.229, 9rem);
     max-width: 90rem;
     margin-inline: auto;
   }
@@ -673,16 +669,12 @@ fieldset {
   .limitations .vector-24-container {
     position: absolute;
     top: 15.6875rem;
-    left: clamp(0px, (100vw - 950px) * 0.337, 165px);
+    left: clamp(0rem, (100vw - 59.375rem) * 0.337, 10.3125rem);
     margin: 0;
   }
   .limitations-container {
     align-items: flex-start;
-    max-width: clamp(
-      31.25rem,
-      31.25rem + (100vw - 59.375rem) * 0.131,
-      35.25rem
-    );
+    max-width: clamp(31.25rem, 31.25rem + (100vw - 59.375rem) * 0.131, 35.25rem);
   }
   .limitations-title {
     font-size: 3rem;
@@ -750,4 +742,4 @@ fieldset {
 .bmi-different {
   flex-direction: row;
   gap: 1.5rem;
-} /*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
