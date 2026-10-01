@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/artemkotko14/body-mass-index-calculator)
+- Live Site URL: [Website](https://artemkotko14.github.io/body-mass-index-calculator/)
 
 ## My process
 
