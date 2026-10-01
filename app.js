@@ -109,14 +109,14 @@ function calcBMIImperial() {
 
 function updateBMI() {
   if (imperial.checked) {
-    let bmi = calcBMIImperial();
+    const bmi = calcBMIImperial();
     updateBMIResult(bmi);
-    let [minStones, minPounds] = calcMinWeight();
-    let [maxStones, maxPounds] = calcMaxWeight();
+    const [minStones, minPounds] = calcMinWeight();
+    const [maxStones, maxPounds] = calcMaxWeight();
     minWeight.innerText = `${minStones}st ${minPounds}lbs`;
     maxWeight.innerText = `${maxStones}st ${maxPounds}lbs`;
   } else {
-    let bmi = calcBMIMetric();
+    const bmi = calcBMIMetric();
     updateBMIResult(bmi);
 
     const minW = calcMinWeight()[0];
