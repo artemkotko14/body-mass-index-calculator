@@ -104,8 +104,8 @@ fieldset {
 .system-option-radio:checked::after {
   content: "";
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: rem(15);
+  height: rem(15);
   background-color: $blue500;
   border-radius: 50%;
 }
@@ -451,7 +451,11 @@ fieldset {
     align-self: start;
     padding: rem(72) 0;
     gap: 2rem;
-    width: clamp(rem(470), calc(rem(470) + (100vw - 950px) * 0.192), rem(564));
+    width: clamp(
+      rem(470),
+      calc(rem(470) + (100vw - rem(950)) * 0.192),
+      rem(564)
+    );
   }
   .hero-title {
     text-align: start;
@@ -542,7 +546,7 @@ fieldset {
     justify-content: flex-start;
     & .vector-24-container {
       position: absolute;
-      top: 251px;
+      top: rem(251);
       left: clamp(0px, calc((100vw - 950px) * 0.337), 165px);
       margin: 0;
     }
@@ -619,7 +623,7 @@ fieldset {
     margin-right: rem(99);
   }
   .hero-title {
-    padding: 0 clamp(1rem, calc(1rem + (100vw - 1100px) * 0.329), 8rem) 0 0;
+    padding: 0 clamp(1rem, calc(1rem + (100vw - rem(1100)) * 0.329), 8rem) 0 0;
   }
 }
 .bmi-different {
